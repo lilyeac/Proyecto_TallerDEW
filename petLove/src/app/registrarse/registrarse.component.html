@@ -1,0 +1,63 @@
+<div class="container px-5 my-5">
+    <form [formGroup]="usuarios">
+
+
+
+
+
+        <div class=" form-group ">
+            <input class="form-control " id="nombreDeUsuario " formControlName="Login_usr" type="text " placeholder="Nombre de usuario " />
+            <label for="nombreDeUsuario ">Nombre de usuario</label>
+
+
+        </div>
+
+
+        <div class="form-group ">
+            <input class="form-control " id="contrasena " formControlName="Pwd_usr" type="text " placeholder="Contraseña " />
+            <label for="contrasena ">Contraseña</label>
+
+        </div>
+
+
+        <div class="form-group ">
+            <input class="form-control " id="apellido " formControlName="Ape_usr" type="text " placeholder="Apellido " />
+            <label for="apellido ">Apellido</label>
+        </div>
+
+
+        <div class="form-group ">
+            <input class="form-control " id="nombre " formControlName="Nom_usr" type="text " placeholder="Nombre " />
+            <label for="nombre ">Nombre</label>
+        </div>
+
+
+        <div class="form-group ">
+            <input class="form-control " id="ubigeo " formControlName="Ubi_usr" type="text " placeholder="Ubigeo " data-sb-validations="required " />
+            <label for="ubigeo ">Ubigeo</label>
+
+        </div>
+
+
+        <div class="form-group ">
+            <input class="form-control " id="numeroDeCelular " formControlName="Cel_usr" type="text " placeholder="Numero de Celular " />
+            <label for="numeroDeCelular ">Numero de Celular </label>
+        </div>
+
+
+        <div class="form-group ">
+            <input class="form-control " id="estado " formControlName="Sta_usr" type="text " placeholder="Estado " />
+            <label for="estado ">Estado</label>
+        </div>
+
+
+
+        <div class="d-grid ">
+            <button type="button " (click)="Agregar() " class="btn btn-primary ">Submit</button>
+        </div>
+
+    </form>
+
+</div>
+
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js "></script>
