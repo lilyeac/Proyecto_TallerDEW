@@ -1,0 +1,130 @@
+create database PetLove
+
+CREATE TABLE Ubigeo (
+	Cod_ubi int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Dis_ubi varchar(50),
+    Prv_ubi varchar(50),
+    Dep_ubi varchar(50),
+    Ord_ubi int  null,
+    Not_ubi varchar(50),
+    Cdi_ubi varchar(50)  
+);
+
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Ancón','Lima','Lima', 2,'na', '150102');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Ate Vitarte','Lima','Lima', 3,'na', '150103');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Barranco','Lima','Lima', 4,'na', '150104');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Breña','Lima','Lima', 5,'na', '150105');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Carabayllo','Lima','Lima', 6,'na', '150106');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Chaclacayo','Lima','Lima', 8,'na', '150107');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Chorrillos','Lima','Lima', 9,'na', '	150108');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Cieneguilla','Lima','Lima', 40,'na', '150109');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Comas','Lima','Lima', 7,'na', '150110');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('El Agustino','Lima','Lima', 10,'na', '150111');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Independencia','Lima','Lima', 28,'na', '150112');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Jesús María','Lima','Lima', 11,'na', '150113');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('La Molina','Lima','Lima', 12,'na', '150114');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('La Victoria','Lima','Lima', 13,'na', '150115');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Lima','Lima','Lima', 1,'na', '150101');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Lince','Lima','Lima', 14,'na', '150116');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Los Olivos','Lima','Lima', 39,'na', '150117');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Lurigancho','Lima','Lima', 15,'na', '150118');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Lurín','Lima','Lima', 16,'na', '150119');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Magdalena del Mar','Lima','Lima', 17,'na', '150120');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Miraflores','Lima','Lima', 18,'na', '150122');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Pachacamac','Lima','Lima', 19,'na', '150123');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Pucusana','Lima','Lima', 20,'na', '150124');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Pueblo Libre','Lima','Lima', 21,'na', '150121');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Puente Piedra','Lima','Lima', 22,'na', '150125');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Punta Hermosa','Lima','Lima', 24,'na', '150126');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Punta Negra','Lima','Lima', 23,'na', '150127');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Rímac','Lima','Lima', 25,'na', '150128');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('San Bartolo','Lima','Lima', 26,'na', '150129');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('San Borja','Lima','Lima', 41,'na', '150130');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('San Isidro','Lima','Lima', 27,'na', '150131');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('San Juan de Lurigancho','Lima','Lima', 36,'na', '150132');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('San Juan de Miraflores','Lima','Lima', 29,'na', '150133');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('San Luis','Lima','Lima', 30,'na', '	150134');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('San Martín de Porres','Lima','Lima', 31,'na', '150135');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('San Miguel','Lima','Lima', 32,'na', '150136');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Santa Anita','Lima','Lima', 43,'na', '150137');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Santa María del Mar','Lima','Lima', 37,'na', '150138');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Santa Rosa','Lima','Lima', 38,'na', '150139	');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Santiago de Surco','Lima','Lima', 33,'na', '150140');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Surquillo','Lima','Lima', 34,'na', '150141');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Villa El Salvador','Lima','Lima', 42,'na', '150142	');
+insert into Ubigeo (Dis_ubi,Prv_ubi,Dep_ubi,Ord_ubi,Not_ubi,Cdi_ubi)  values ('Villa María del Triunfo','Lima','Lima', 35,'na', '150143');
+
+
+CREATE TABLE Negocios(
+	Id_neg int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Nom_neg varchar(50),
+    Dir_neg varchar(50),
+    Ubi_neg int not null,
+    Aqd_neg varchar(50),
+    Fre_neg date null,
+    Sta_neg int(1),
+    Not_neg varchar(50),  
+    FOREIGN KEY (Ubi_neg) REFERENCES  Ubigeo (Cod_ubi)
+);
+
+insert into Negocios (Nom_neg,Dir_neg,Ubi_neg,Aqd_neg,Fre_neg,Sta_neg,Not_neg)  values ('Superpet','Isabel La Catoloca 1224',17,'jugetes para perros','2022-01-01',1,'NA');
+insert into Negocios (Nom_neg,Dir_neg,Ubi_neg,Aqd_neg,Fre_neg,Sta_neg,Not_neg)  values ('De Todo Pet','Fray Angelico 197',33,'Todo relacionado a perros','2022-03-03',1,'NA');
+insert into Negocios (Nom_neg,Dir_neg,Ubi_neg,Aqd_neg,Fre_neg,Sta_neg,Not_neg)  values ('Naricitas Pet Shop','C. Las Morenas-312',34,'Vterinaria','2021-04-10',1,'NA');
+insert into Negocios (Nom_neg,Dir_neg,Ubi_neg,Aqd_neg,Fre_neg,Sta_neg,Not_neg)  values ('La Marina ','Calle Monte Casoba 104',44,'Vterinaria','2021-08-10',1,'NA');
+
+
+CREATE TABLE Usuarios(
+    Id_usr int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	Login_usr varchar(50),
+    Pwd_usr varchar(50),
+    Ape_usr varchar(50),
+    Nom_usr varchar(50),
+    Ubi_usr int not null,
+    Cel_usr varchar(50),
+    Sta_usr int(1),
+    FOREIGN KEY (Ubi_usr) REFERENCES  Ubigeo (Cod_ubi)
+);
+
+insert into Usuarios (Login_usr,Pwd_usr,Ape_usr,Nom_usr,Ubi_usr,Cel_usr,Sta_usr)  values ('admin','admin','administrador','admin11',1,'9997483812',1);
+insert into Usuarios (Login_usr,Pwd_usr,Ape_usr,Nom_usr,Ubi_usr,Cel_usr,Sta_usr)  values ('jose','1234','monte','valnonado',33,'9983489381',1);
+insert into Usuarios (Login_usr,Pwd_usr,Ape_usr,Nom_usr,Ubi_usr,Cel_usr,Sta_usr)  values ('antonia','4321','velazques','carrion',3,'995833311',1);
+insert into Usuarios (Login_usr,Pwd_usr,Ape_usr,Nom_usr,Ubi_usr,Cel_usr,Sta_usr)  values ('JUAN','jchr','Juan Carlos ','Herrera',3,'935457383',1);
+
+CREATE TABLE Razas (
+    Id_raz int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	Des_raz varchar(800),
+    Ori_raz varchar(800),
+    His_raz varchar(8000),
+    Tem_raz varchar(3000),
+    Fot_raz MEDIUMBLOB ,
+    Not_raz varchar(50)
+);
+
+insert into Razas (Des_raz,Ori_raz,His_raz,Tem_raz,Fot_raz,Not_raz)  values ('perro pequeño con unas Dimensione de 18 a 22 cm con Peso	1,5 a 3 kg','Los antepasados del pomerania eran perros de trineo en Islandia y Laponia, que llegaron a Europa a través de Pomerania. La región de Pomerania, bañada al norte por el mar Báltico y limitada al oeste por la isla de Rügen y al este por el río Vístula, ha sido ocupada por muchos pueblos: celtas, eslavos, polacos, suecos, daneses y prusianos. Su nombre procede de Pomore o Pommern, lo que significa junto al mar, y le fue dado en tiempos de Carlomagno. Es en Pomerania donde el Spitz ganó fama como mascota y perro de labor.',
+'Los criadores caninos mejoraron el pelaje y adaptaron al perro a la vida urbana, pero los pomerania pesaban más de 10 kg al llegar a Inglaterra.Se atribuye a los criadores la reducción de talla del animal y el desarrollo de su variedad de colores, siguiendo métodos de prueba y error y aplicando las teorías genéticas de Gregor Mendel. El pomerania actual es pequeño debido a la crianza selectiva, pero conserva la robustez y el pelaje típicos de los perros de climas fríos.Fue la reina de Inglaterra Carlota de Mecklemburgo-Strelitz quien introdujo al pomerania entre la nobleza de su país, pero la raza solo alcanzó fama internacional cuando su nieta Victoria volvió de unas vacaciones en Florencia, Italia, con un pomeranio llamado Marco.El pomerania como raza moderna no existió hasta el siglo XIX. Los perros de las reinas Carlota y Victoria eran mucho más grandes, probablemente un Spitz Alemán y un Spitz Volpino. Lo mismo puede decirse de otros propietarios históricos de pomeranos anteriores al siglo XIX.
+','Los pomeranos son típicamente una raza amigable, alegre, amorosa y vivaz.8​ Les encanta estar alrededor de sus propietarios y son conocidos por ser protectores de ellos.9​ Están alertas y conscientes de los cambios en su medio ambiente y ladrándole a todo nuevo estímulo, lo que puede convertirse en un hábito de ladrar excesivamente en cualquier situación. Son defensivos de su territorio, y por lo tanto, van a ladrar por cualquier ruido exterior.10​ Son extrovertidos y disfrutan cuando son el centro de atención, pero pueden llegar a ser muy agresivos y dominantes si no están bien entrenados y educados.9​ Por lo mismo, también es muy importante socializarlo desde cachorro, ya que tampoco es raro que se muestren desconfiados en presencia de extraños.A nivel de inteligencia el pomerano ocupó el puesto veintitrés en la clasificación de Stanley Coren acerca de la inteligencia de los perros.11​Es un perro activo, independiente, que se adapta fácilmente a la vida urbana y es excelente para el campo. No obstante, puede que no interactúe bien con niños pequeños, ya que debido a su pequeña talla puede ser lastimado con facilidad. Hay que tener en cuenta que es un perro de carácter fuerte, como todos los spitz, por lo que no tolerará maltratos por parte de los pequeños, y podría llegar a morder o mostrarse asustado e inseguro en esos casos.Si se pretende introducir otro animal u otra mascota junto al pomerano, es mejor hacerlo cuando el animal es todavía cachorro. Se recomienda supervisar los juegos con perros de raza grande, ya que su pequeño tamaño y sus finos huesos lo hacen susceptible de sufrir graves daños con los movimientos y fuerza de un perro grande, pudiendo causarle heridas graves e incluso la muerte.',
+null,'NA');
+
+CREATE TABLE Mascotas (
+    Id_mas int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	Fre_mas date,
+    Usr_mas int not null,
+    Gen_mas int(1),
+    Raz_mas int not null,
+    Fna_mas date,
+    Not_mas varchar(200),
+	Sta_mas int (1),
+     FOREIGN KEY (Usr_mas) REFERENCES  Usuarios (Id_usr),
+     FOREIGN KEY (Raz_mas) REFERENCES  Razas (Id_raz)
+);
+
+insert into Mascotas (Fre_mas,Usr_mas,Gen_mas,Raz_mas,Fna_mas,Not_mas,Sta_mas)  values ('2022-06-15',4,1,1,'2012-12-18','na',1);
+
+CREATE TABLE Detalle_de_Mascotas_fotos (
+    Id_fot int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	Mas_fot int not null,
+    Fot_fot MEDIUMBLOB,
+    Not_fot varchar(200),
+     FOREIGN KEY (Mas_fot) REFERENCES  Mascotas (Id_mas)
+     
+);
