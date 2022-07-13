@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using Servicio.Entities;
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ namespace Servicio.Repository
 
         public NegociosEntity SelectID(string idU)
         {
-            using (MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=petlove;Uid=root;password=mysql;"))
+            using (MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=petlove;Uid=root;password=root;"))
             {
                 conexion.Open();
                 MySqlCommand cmd = new MySqlCommand();

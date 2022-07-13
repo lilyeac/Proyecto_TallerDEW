@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using Servicio.Entities;
 using System;
 using System.Collections.Generic;
@@ -79,7 +79,7 @@ namespace Servicio.Repository
         public void Insertar(string Login_usr, string Pwd_usr, string Ape_usr, string Nom_usr,int Ubi_usr, string Cel_usr,int Sta_usr)
         {
 
-            using (MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=petlove;Uid=root;password=mysql;"))
+            using (MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=petlove;Uid=root;password=root;"))
             {
                 conexion.Open();
                 MySqlCommand cmd = new MySqlCommand();
