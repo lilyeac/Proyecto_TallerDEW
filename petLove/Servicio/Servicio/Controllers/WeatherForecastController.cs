@@ -20,9 +20,12 @@ namespace Servicio.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+
+        private readonly ISubirImagenRepository _subirImagenRepository;
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, ISubirImagenRepository subirImagenRepository)
         {
             _logger = logger;
+            _subirImagenRepository = subirImagenRepository;
         }
 
 
@@ -105,7 +108,7 @@ namespace Servicio.Controllers
         public int Insertarnegocios(NegociosEntity NegocioIns)
         {
             NegocioRepository repo = new NegocioRepository();
-            repo.Insertar(NegocioIns.Nom_neg, NegocioIns.Dir_neg, NegocioIns.Ubi_neg, NegocioIns.Aqd_neg, NegocioIns.Fre_neg, NegocioIns.Sta_neg, NegocioIns.Not_neg);
+            repo.Insertar(NegocioIns.Nom_neg, NegocioIns.Dir_neg, NegocioIns.Ubi_neg, NegocioIns.Aqd_neg, NegocioIns.Fre_neg.ToString("yyyy-MM-dd HH:mm:ss"), NegocioIns.Sta_neg, NegocioIns.Not_neg);
             return 1;
 
         }
@@ -248,14 +251,12 @@ namespace Servicio.Controllers
         }
 
 
-
-
-
-
-
-
-
-
+        [HttpPost("subir-imagen-mascotas")]
+        public async Task<int> SubirImagen([FromForm] Imagen imagen)
+        {
+            await _subirImagenRepository.Handle(imagen);
+            return 1;
+        }
 
 
 

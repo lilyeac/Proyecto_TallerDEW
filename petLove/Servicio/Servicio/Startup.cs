@@ -6,6 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Servicio.Repository;
+using Servicio.Repository.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,12 +27,13 @@ namespace Servicio
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddCors().AddAzureStorage(Configuration);
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Servicio", Version = "v1" });
             });
+            services.AddTransient<ISubirImagenRepository, SubirImagenRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

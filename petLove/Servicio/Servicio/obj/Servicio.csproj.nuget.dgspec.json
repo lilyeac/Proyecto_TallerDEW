@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lily\\Downloads\\Proyecto de Desarrollo (1)\\Proyecto de Desarrollo\\Servicio\\Servicio\\Servicio.csproj": {}
+    "C:\\Users\\Lily\\OneDrive\\Escritorio\\Servicio\\Servicio\\Servicio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lily\\Downloads\\Proyecto de Desarrollo (1)\\Proyecto de Desarrollo\\Servicio\\Servicio\\Servicio.csproj": {
+    "C:\\Users\\Lily\\OneDrive\\Escritorio\\Servicio\\Servicio\\Servicio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lily\\Downloads\\Proyecto de Desarrollo (1)\\Proyecto de Desarrollo\\Servicio\\Servicio\\Servicio.csproj",
+        "projectUniqueName": "C:\\Users\\Lily\\OneDrive\\Escritorio\\Servicio\\Servicio\\Servicio.csproj",
         "projectName": "Servicio",
-        "projectPath": "C:\\Users\\Lily\\Downloads\\Proyecto de Desarrollo (1)\\Proyecto de Desarrollo\\Servicio\\Servicio\\Servicio.csproj",
+        "projectPath": "C:\\Users\\Lily\\OneDrive\\Escritorio\\Servicio\\Servicio\\Servicio.csproj",
         "packagesPath": "C:\\Users\\Lily\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lily\\Downloads\\Proyecto de Desarrollo (1)\\Proyecto de Desarrollo\\Servicio\\Servicio\\obj\\",
+        "outputPath": "C:\\Users\\Lily\\OneDrive\\Escritorio\\Servicio\\Servicio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lily\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.10.0, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.29, )"
@@ -67,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

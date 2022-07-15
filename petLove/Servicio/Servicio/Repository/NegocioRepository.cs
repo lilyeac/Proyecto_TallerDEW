@@ -1,4 +1,4 @@
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using Servicio.Entities;
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ namespace Servicio.Repository
 
         public NegociosEntity SelectID(string idU)
         {
-            using (MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=petlove;Uid=root;password=root;"))
+            using (MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=petlove;Uid=root;password=mysql;"))
             {
                 conexion.Open();
                 MySqlCommand cmd = new MySqlCommand();
@@ -49,7 +49,7 @@ namespace Servicio.Repository
 
         public List<NegociosEntity> SelectAll()
         {
-            using (MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=petlove;Uid=root;password=mysql;"))
+            using (MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=petlove;Uid=root;password=root;"))
             {
                 conexion.Open();
                 MySqlCommand cmd = new MySqlCommand();
@@ -84,7 +84,7 @@ namespace Servicio.Repository
 
 
 
-        public void Insertar(string Nom_neg, string Dir_neg, int Ubi_neg, string Aqd_neg, DateTime Fre_neg, int Sta_neg, string Not_neg)
+        public void Insertar(string Nom_neg, string Dir_neg, int Ubi_neg, string Aqd_neg, string Fre_neg, int Sta_neg, string Not_neg)
         {
 
             using (MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=petlove;Uid=root;password=mysql;"))
@@ -97,7 +97,7 @@ namespace Servicio.Repository
                 cmd.Parameters.Add("?Dir_neg", MySqlDbType.String).Value = Dir_neg;
                 cmd.Parameters.Add("?Ubi_neg", MySqlDbType.Int16).Value = Ubi_neg;
                 cmd.Parameters.Add("?Aqd_neg", MySqlDbType.String).Value = Aqd_neg;
-                cmd.Parameters.Add("?Fre_neg", MySqlDbType.Date).Value = Fre_neg;
+                cmd.Parameters.Add("?Fre_neg", MySqlDbType.String).Value = Fre_neg;
                 cmd.Parameters.Add("?Sta_neg", MySqlDbType.Int16).Value = Sta_neg;
                 cmd.Parameters.Add("?Not_neg", MySqlDbType.String).Value = Not_neg;
                 cmd.ExecuteReader();
