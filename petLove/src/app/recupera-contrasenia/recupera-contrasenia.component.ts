@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-recupera-contrasenia',
@@ -7,7 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecuperaContraseniaComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private fb: FormBuilder
+  ) { }
+
+  contactusForm = this.fb.group({
+   
+       
+    email: ['', [Validators.required, Validators.email]]
+    
+  })
+
+  __onSubmit() {
+    if(this.contactusForm.valid) {
+      console.log(this.contactusForm.value)
+    } else {
+      alert("Correo invalido...")
+    }
+  }
 
   ngOnInit(): void {
   }

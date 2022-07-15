@@ -2,22 +2,22 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-insert-macota',
-  templateUrl: './insert-macota.component.html',
-  styleUrls: ['./insert-macota.component.css']
+  selector: 'app-contacto',
+  templateUrl: './contacto.component.html',
+  styleUrls: ['./contacto.component.css']
 })
-export class InsertMacotaComponent implements OnInit {
+export class ContactoComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder
   ) { }
 
   contactusForm = this.fb.group({
-    persona: this.fb.group({
+   
       nombres: ['', Validators.required],
-      precio: ['', Validators.required]
-    }),
-    email: ['', [Validators.required, Validators.email]],
+      apellidos: ['', Validators.required],
+    
+    asunto: ['', [Validators.required, Validators.email]],
     mensaje: ['', Validators.required]
   })
 
@@ -25,8 +25,11 @@ export class InsertMacotaComponent implements OnInit {
     if(this.contactusForm.valid) {
       console.log(this.contactusForm.value)
     } else {
-      alert("Formulario no incompleto..")
+      alert("Formulario no valido...")
     }
   }
+
   ngOnInit(): void {
-  }}  
+  }
+
+}

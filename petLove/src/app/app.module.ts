@@ -17,6 +17,7 @@ import { ListarUsuarioComponent } from './listar-usuario/listar-usuario.componen
 import { RegistrarNegocioComponent } from './registrar-negocio/registrar-negocio.component';
 import { ActualizarNegocioComponent } from './actualizar-negocio/actualizar-negocio.component';
 import { ListarNegocioComponent } from './listar-negocio/listar-negocio.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ListarNegocioComponent } from './listar-negocio/listar-negocio.componen
     ListarUsuarioComponent,
     RegistrarNegocioComponent,
     ActualizarNegocioComponent,
-    ListarNegocioComponent
+    ListarNegocioComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

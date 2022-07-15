@@ -5,8 +5,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
     <link
       rel="stylesheet"
       type="text/css"
@@ -16,7 +14,7 @@
     />
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="./insert-macota.component.css" />
-
+    
     <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
   </head>
@@ -26,6 +24,9 @@
       <div class="h5--registrar-mascota2-block1 layout">
         <div class="h5--registrar-mascota2-block2 layout">
           <div class="h5--registrar-mascota2-block2-item">
+            <br>
+            <br>
+            <br>
             <div
               style="--src:url(../assets/043f9b8f40eb99658472228d3ba839b4.png)"
               class="h5--registrar-mascota2-image layout"
@@ -64,13 +65,14 @@
         <div class="h5--registrar-mascota2-block6 layout">
           <div class="h5--registrar-mascota2-block7 layout">
             <div class="h5--registrar-mascota2-block8 layout">
-              <h1 class="h5--registrar-mascota2-hero-title layout">Agregar mascota</h1>
+              <h1 class="h5--registrar-mascota2-hero-title layout">Registrar Mascota</h1>
             </div>
             <div class="h5--registrar-mascota2-block9 layout">
               <div class="h5--registrar-mascota2-block10 layout">
                 <div class="h5--registrar-mascota2-block11 layout">
                   <div class="h5--registrar-mascota2-block12 layout">
-                    <h3 class="h5--registrar-mascota2-subtitle2 layout">Nombre</h3>
+                  <!--  <h3 class="h5--registrar-mascota2-subtitle2 layout">Nombre</h3>-->
+                    <input type="text" formControlName="nombres" placeholder="Ingrese Nombres" class="form-control">
                   </div>
                   <div class="h5--registrar-mascota2-block13 layout">
                     <div class="h5--registrar-mascota2-block13-item">
@@ -147,22 +149,16 @@
                     </div>
                   </div>
                   <div class="h5--registrar-mascota2-block12 layout1">
-                    <h3 class="h5--registrar-mascota2-subtitle2 layout">Precio de monta (S/.)</h3>
+                  <!--  <h3 class="h5--registrar-mascota2-subtitle2 layout">Precio de monta (S/.)</h3>-->
+                    <input type="text" formControlName="precio" placeholder="Precio de monta (S/.)" class="form-control">
                   </div>
                   <div class="h5--registrar-mascota2-block17 layout">
                     <h3 class="h5--registrar-mascota2-subtitle2 layout6">Descripción</h3>
                   </div>
-              
-                  <div class="h5--registrar-mascota2-block12 layout1">
-                    <div class="g-recaptcha" data-sitekey="6LcWvrAgAAAAAHZN1JdM1Zjjf2JuorXIf8YbNIc0"></div>
-                    <br>
-                  </div>
-
                   <div class="h5--registrar-mascota2-block11-item">
                     <div class="h5--registrar-mascota2-block18 layout">
                       <h3 class="h5--registrar-mascota2-subtitle3-box layout">
-
-                        <pre class="h5--registrar-mascota2-subtitle3">Agregar  mascota</pre>
+                        <pre (click)="__onSubmit()"class="h5--registrar-mascota2-subtitle3">Agregar  mascota</pre>
                       </h3>
                     </div>
                   </div>

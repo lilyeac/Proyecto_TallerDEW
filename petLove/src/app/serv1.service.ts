@@ -11,8 +11,6 @@ export class Serv1Service {
 
 
 
-
-
   agregarusuarios(model: any):any{
     
     return this.httpClient.post<any>("http://localhost:10995/WeatherForecast/insertar-usuarios", model);

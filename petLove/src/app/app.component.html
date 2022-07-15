@@ -1,37 +1,46 @@
-<!--<app-navbar></app-navbar>
-<app-login></app-login>
-<router-outlet></router-outlet>
+  
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav" style="opacity: 1;background-color: rgba(223, 18, 114, 0.904);">
+   
+    <div class="container">
+       
+        <a class="navbar-brand js-scroll-trigger" routerLink="home" style="color: rgb(229, 234, 240);">Petlove</a>
+        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarResponsive" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgb(233, 231, 229);"><i class="fa fa-bars" style="color: rgba(255,255,255,0.75);"></i>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-nav ml-auto text-uppercase">
+              
+                               <li class="nav-item" role="presentation">
+                    <a class="nav-link active js-scroll-trigger" routerLink="contacto" style="color: rgb(198, 215, 218);">Contacto</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    
+                    <a class="nav-link active js-scroll-trigger" routerLink="listar-negocio" style="color: rgb(198, 215, 218);">Veterinarios</a>
+                   
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active js-scroll-trigger" routerLink="registrarse" style="color: rgb(198, 215, 218);">Registrarse</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active js-scroll-trigger" routerLink="login" style="color: rgb(198, 215, 218);">Login</a>
+                </li>
+                <li class="nav-item dropdown">
 
-<app-navbar></app-navbar>
-<app-recupera-contrasenia></app-recupera-contrasenia>
-<router-outlet></router-outlet>
-
-<app-navbar></app-navbar>
-<app-home></app-home>
-<router-outlet></router-outlet>
-
-<app-navbar></app-navbar>
-<app-insert-macota></app-insert-macota>
-<router-outlet></router-outlet>
-
-<app-navbar></app-navbar>
-<app-editar-perfil></app-editar-perfil>
-<router-outlet></router-outlet>
-
-<app-navbar></app-navbar>
-<app-listar-negocio></app-listar-negocio>
-<router-outlet></router-outlet>
-
-<app-navbar></app-navbar>
-<app-registrar-negocio></app-registrar-negocio>
-<router-outlet></router-outlet>
-
-<app-navbar></app-navbar>
-<app-registrarse></app-registrarse>
-<router-outlet></router-outlet>
-
--->
-
-<app-navbar></app-navbar>
-<app-insert-macota></app-insert-macota>
-<router-outlet></router-outlet>
+                    <a class="nav-link dropdown-toogle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: rgb(243, 240, 236);">Administracion</a>
+                    <div class="dropdown-menu">
+                           <a class="dropdown-item" routerLink="editar-perfil">Editar Perfil</a>
+                        <a class="dropdown-item" routerLink="eliminar-usuario">Eliminar Usuario</a>
+                        <a class="dropdown-item" routerLink="recuperar-contrasenia">Recuperar Contraseña</a>
+                        <a class="dropdown-item" routerLink="listar-usuario">Lista de usuarios</a>
+                        <a class="dropdown-item" routerLink="listar-negocio">Listar Negocio</a>
+                        <a class="dropdown-item" routerLink="insert-macota">Registrar Mascota</a>
+                    </div>
+                </li>
+               
+            </ul>
+            <!-- <a class="btn btn-primary text-black-50 border-dark" role="button" href="userLogin.html" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);border:none;">Acceder</a> -->
+        </div>
+    </div>
+</nav>
+<section style="min-height: 650px; padding-top: 0px; padding-bottom: 0px;">
+    <router-outlet></router-outlet>
+</section>
